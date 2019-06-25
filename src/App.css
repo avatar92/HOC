@@ -1,0 +1,192 @@
+.app {
+  text-align: center;
+  border: 1px solid black; 
+  width: 462.5px;
+  height: 577px;
+  border-radius: 50px; 
+  position: relative; 
+  background-image: url(https://www.svgrepo.com/show/169181/tablet.svg); 
+  background-repeat: no-repeat;   
+  background-position: center;
+  background-size: 125%; 
+}
+.search-Bar
+{
+  position: absolute;
+  left: 12%; 
+  top: 10%;
+  /* border: 1px solid red;   */
+  max-width: 175px;
+  display: flex;
+  justify-content: space-between; 
+  flex-wrap: wrap; 
+}
+.search
+{
+  border: 1px solid black; 
+  width: 50%; 
+  float: left; 
+  height: 20px;
+  min-width: 110px;
+}
+.searchbutton
+{
+  display: inline-block;
+  width:  auto;
+  padding: 3.75px 5px; 
+  background-color: transparent; 
+  border: 1px solid black;  
+}
+/*********** rating filter*/ 
+.ratingfilter
+{
+  /* border: 1px solid yellowgreen;  */
+  position: absolute;
+  left: 60%;
+  top: 8%; 
+  display: flex; 
+  flex-direction: column;  
+}
+.minimumrating 
+{
+  font-size: 10px; 
+}
+.stars
+{
+  font-size: 0.75rem; 
+  margin-top: -10px; 
+}
+.movie-card-container
+{
+  position: relative;
+  border: 2px solid black; 
+  width: 150px;
+  height: 180px;   
+  margin: 5px 5px; 
+}
+.imgstyle
+{
+  width: 100%;
+  height: 150px;
+  border-bottom: 2px solid black;  
+}
+.moviedescription
+{
+  display: flex;
+  justify-content: space-around; 
+}
+.movieRating1
+{
+  position: absolute;
+  /* border: 2px solid black;  */
+  height: 25px;
+  left: 81px;
+  top: -1px;   
+}
+.stars1
+{
+  /* border: 1px solid red;  */
+  height: 100%;
+  margin: 0px; 
+  color: white; 
+}
+.movie-list
+{
+  /* border: 4px solid yellow;  */
+  width: 78.5%;
+  height: 385px;
+  position: absolute; 
+  left: 10%;
+  top: 15%; 
+  display: flex; 
+  flex-wrap: wrap; 
+  overflow: hidden;
+  overflow-y: scroll;
+}
+.movie-add-container
+{
+  border: 2px solid black; 
+  width: 150px;
+  height: 180px;   
+  margin: 5px 5px;
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  justify-content: center; 
+}
+.add
+{
+  font-size: 60px;
+  font-weight: 900;  
+}
+#movieAdder
+{
+  border: 1px solid black; 
+  z-index: 1;
+  position: relative;
+  top: 7.5%;
+  left: 9.6%;   
+  max-width: 80.5%;
+  height: 0px;
+  border-radius: 9px;
+  background-color: rgba(255,255,255,1);      
+  text-align: center;
+  overflow: hidden;  
+}
+.firstparag
+{
+  margin-top: 40px;
+  font-weight: 600;  
+}
+.closeBTN
+{
+  float: right; 
+  padding: 5px; 
+  
+}
+.addmovie p 
+{
+  font-weight: 600; 
+}
+.addbutton
+{
+  margin-top: 10px;
+  border: 1px solid black;  
+  height: 20px;
+  background-color: white; 
+}
+.lds-ring {
+  display: inline-block;
+  position: relative;
+  width: 64px;
+  height: 64px;
+}
+.lds-ring div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 51px;
+  height: 51px;
+  margin: 6px;
+  border: 6px solid rgb(230, 40, 40);
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: rgb(214, 18, 18) transparent transparent transparent;
+}
+.lds-ring div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+.lds-ring div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+.lds-ring div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
